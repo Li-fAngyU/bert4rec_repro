@@ -21,6 +21,7 @@ class DatasetsRegister(object):
         "BERT4rec.ml-1m": lambda: get_bert4rec_dataset("ml-1m"),
         "BERT4rec.steam": lambda: get_bert4rec_dataset("steam"),
         "BERT4rec.beauty": lambda: get_bert4rec_dataset("beauty"),
+        "BERT4rec.beauty_s3": lambda: get_bert4rec_dataset("beauty_s3"),
         "ml-20m": lambda: get_movielens20m_actions(min_rating=0.0),
         "ml-25m": lambda: get_movielens25m_actions(min_rating=0.0),
         "ml-100k": lambda: get_movielens100k_actions(min_rating=0.0),
